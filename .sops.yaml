@@ -1,0 +1,7 @@
+keys:
+  - &default age1qpw5h5sqc28rak35eehkqsc600nj5puhqduzmjuypmgkt7ylr58skafa6z
+creation_rules:
+  - path_regex: (home|hosts|modules|secrets)/([^/]*/)?[a-zA-Z0-9]+[a-zA-Z0-9._-]*[a-zA-Z0-9]+.(yaml|yml)$
+    key_groups:
+      - age:
+          - *default
